@@ -7,9 +7,10 @@
     gap: 5rem;
 }
 
-.menu-btn__txt {
+.menu__btn-txt {
     font-size: $font_l;
     font-family: 'red hat display';
+    border-bottom: solid $secondary 1px;
 }
 
 .menu-btn__bar {
@@ -34,13 +35,21 @@
 }
 
 
-
-.menu-btn__txt {
-    border-bottom: solid $secondary 1px;
-}
-
 .list__sm {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+@media (max-width : $width_s) {
+
+}
+@media (max-width : $width_m) {
+    .menu__btn-txt {
+        display: none;
+    }
+}
+
+@media (max-width : $width_l) {
+
 }

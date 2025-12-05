@@ -29,3 +29,23 @@
 .menu__center {
     justify-content: space-between;
 }
+
+@media (max-width : $width_s) {
+    .header__title{
+        font-size: $font_m;
+    }
+
+}
+@media (max-width : $width_m) {
+    .text{
+        font-size: $font_xs;
+    }
+
+}
+
+@media (max-width : $width_l) {
+    .header__title{
+    font-size: $font_l;
+    }
+
+}
