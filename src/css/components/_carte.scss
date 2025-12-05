@@ -1,0 +1,76 @@
+@use '../utils/variables' as *;
+
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $primary;
+    border-radius: 25px;
+    box-shadow: $shadow;
+    padding: 60px 100px;
+    margin-top: 90px;
+}
+
+.carte__part {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+
+.carte__produit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.produit__img-title-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.produit__title-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu__title-carte {
+    position: absolute;
+    left: 35vw;
+    top: 90px;
+}
+.carte__title {
+  color: $black;
+  font-family: "Cookie";
+  font-size: $font_xxl;
+  border-bottom: 1px solid $black;
+  width:fit-content;
+}
+
+.produit__title {
+    font-size: $font_product;
+    font-family: "Cookie";
+    border-bottom: 1px solid $black;
+    width:fit-content;
+}
+
+.produit__desc {
+    font-size: $font_m;
+    font-family: "red hat display";
+}
+
+.produit__img {
+    width: 100px;
+}
+
+.carte__price__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carte__price {
+    font-family: 'Cookie';
+    font-size: $font_product;
+    color: $primary;
+}

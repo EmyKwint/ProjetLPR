@@ -1,0 +1,54 @@
+@use '../utils/variables' as *;
+
+img {
+    max-width: 100%;
+}
+
+
+.hero__img {
+    width: 780px;
+    height: 395px;
+    border-radius: 25px;
+    box-shadow: $shadow;
+}
+
+.hero__title__img {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.img__1 {
+    z-index: 1;
+    position: relative;
+    left: 50%;
+
+
+}
+
+.img__2 {
+    z-index: 0;
+    position: absolute;
+    top: 200px;
+}
+
+.index__img {
+    width: 40vw;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: $shadow;
+}
+
+.index__middle__img {
+    border-radius: 25px;
+    box-shadow: $shadow;
+    width: 50vw;
+    height: auto;
+    object-fit: fill;
+    position: relative;
+}
+
+.img__carroussel {
+    box-shadow: $shadow;
+    border-radius: 25px;
+}

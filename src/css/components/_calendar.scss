@@ -1,0 +1,7 @@
+@use '../utils/variables' as *;
+
+.calendar {
+    width: 75%;
+    font-family: 'Red Hat Display';
+    font-size: $font_m;
+}

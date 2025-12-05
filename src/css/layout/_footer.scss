@@ -1,0 +1,76 @@
+@use '../utils/variables' as *;
+
+footer {
+    background-color: $secondary;
+    padding: 10px;
+}
+
+.footer__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footer__div-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $primary;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid $background 2px;
+}
+
+.footer__text {
+    color: $background;
+    font-family: "red hat display";
+    font-size: $font_l;
+}
+
+.footer__text-red {
+    margin-top: 20px;
+    color: $primary;
+    font-family: "red hat display";
+    font-size: $font_l;
+}
+
+.title-footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+    border-bottom: solid $background 2px ;
+}
+
+.dev__thx {
+    font-size: $font_s;
+    font-family: 'Red Hat Display';
+}
+
+.footer__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer__link-link {
+    display: flex;
+    gap: 10px;
+    font-size: $font_s;
+}
+
+.footer__item-white a {
+    color: $background;
+    text-decoration: none;
+    font-size: $font_s;
+    font-family: 'Red Hat Display';
+    &:hover {
+        text-shadow:
+        1px .5px 1px $background-blur;
+    }
+}

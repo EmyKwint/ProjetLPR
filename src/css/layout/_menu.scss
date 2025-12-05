@@ -1,0 +1,46 @@
+@use '../utils/variables' as *;
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.menu-btn__txt {
+    font-size: $font_l;
+    font-family: 'red hat display';
+}
+
+.menu-btn__bar {
+    display: none;
+}
+
+.menu__item {
+    color: $primary;
+    text-decoration: none;
+    font-size: 2.5rem;
+
+}
+
+.menu__item-white a {
+    color: $background;
+    text-decoration: none;
+    font-size: 2.5rem;
+    &:hover {
+        text-shadow:
+        1px .5px 1px $background-blur;
+    }
+}
+
+
+
+.menu-btn__txt {
+    border-bottom: solid $secondary 1px;
+}
+
+.list__sm {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

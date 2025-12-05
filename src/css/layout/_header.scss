@@ -1,0 +1,31 @@
+@use '../utils/variables' as *;
+
+.header {
+    padding: 20px 0px 20px;
+    max-width: 100%;
+    background-color: ($background-blur);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 5px black;
+    justify-content: space-between;
+}
+
+
+.header__menu {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header__title {
+    font-family: 'cookie';
+    color: $primary;
+    font-size: $font_xxl;
+}
+
+.menu__center {
+    justify-content: space-between;
+}

@@ -1,0 +1,63 @@
+@use '../utils/variables' as *;
+
+.btn {
+    display: flex;
+    margin-top: 2rem;
+    padding: 15px;
+    justify-content: center;
+}
+
+.btn-cta {
+    border: solid 2px  $primary;
+    border-radius: 10px;
+    background-color: $background;
+    padding: 1rem;
+    box-shadow: $shadow;
+    justify-content: center;
+}
+
+.btn-cta:hover {
+    box-shadow: $inner_shadow;
+}
+
+.carroussel__arrow-left {
+    font-size: $font_xl;
+    color: $background;
+    position: absolute;
+    top: 175px;
+    left: 5px;
+        &:hover {
+        text-shadow:
+        1px .5px 1px $background_blur;
+        }
+}
+
+.carroussel__arrow-right {
+    font-size: $font_xl;
+    color: $background;
+    position: absolute;
+    top: 175px;
+    right: 5px;
+        &:hover {
+        text-shadow:
+        1px .5px 1px $background_blur;
+        }
+}
+
+.fill {
+    position: absolute;
+    font-size: $font_xl;
+    color: $background-blur;
+    backdrop-filter: blur(5px);
+}
+
+.fill-left {
+    position: absolute;
+    top: 250px;
+}
+
+.fill-right {
+    position: absolute;
+    top: 250px;
+    right: 2.5px;
+}

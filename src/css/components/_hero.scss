@@ -1,0 +1,55 @@
+@use '../utils/variables' as *;
+
+.hero {
+    position: relative;
+    margin-bottom: 220px;
+    margin-top: 20px;
+}
+.hero__title {
+    z-index: 2;
+    padding: 2rem;
+    //font-size: 12.8rem;
+    font-size: 14.4rem;
+    color: $secondary;
+    position: absolute;
+    text-shadow:
+    2.5px 2.5px 0 $background,
+    -2.5px 2.5px 0 $background,
+    -2.5px -2.5px 0 $background,
+    2.5px -2.5px 0 $background;
+}
+
+.menu__title {
+    z-index: 2;
+    padding: 2rem;
+    font-family: "Cookie";
+    text-align: center;
+    font-size: 14.4rem;
+    color: $secondary;
+    text-shadow:
+    2.5px 2.5px 0 $background,
+    -2.5px 2.5px 0 $background,
+    -2.5px -2.5px 0 $background,
+    2.5px -2.5px 0 $background;
+}
+
+
+
+.hero__1 {
+    left: 5vw;
+    position: absolute;
+}
+.hero__2 {
+    left : 32vw;
+    top: 200px;
+    position: absolute;
+}
+.hero__3 {
+    left: 45vw;
+    top: 400px;
+    position: absolute;
+}
+
+.hero__title__div {
+    position: relative;
+}

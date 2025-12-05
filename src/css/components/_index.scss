@@ -1,0 +1,45 @@
+@use '../utils/variables' as *;
+
+.index__présentation{
+    gap: 20px;
+}
+
+.index__présentation-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.index__middle__div {
+    padding: 15px 10px;
+    border-radius: 25px;
+    border: 0.2rem solid $secondary;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: $shadow;
+}
+
+.index__middle__carroussel-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+
+.index__middle__carroussel {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+.index__reservation {
+    display: flex;
+    flex-direction: column;
+}
+

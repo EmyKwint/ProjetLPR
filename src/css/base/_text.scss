@@ -1,0 +1,71 @@
+@use '../utils/variables' as *;
+
+
+
+.title {
+  font-family: 'cookie';
+}
+
+.text {
+  font-size: $font_l;
+  font-family: "red hat display";
+}
+
+.text-m {
+  font-size: $font_s;
+  font-family: "red hat display";
+}
+
+.text-red {
+    color: $primary;
+}
+
+.text-blue {
+    color: $secondary;
+}
+
+.text-white {
+    color: $background;
+}
+
+.index__text__1 {
+    text-align: right;
+}
+
+.index__text__2 {
+    text-align: left;
+}
+  
+.index__presentation-txt {
+  align-self: center;
+  margin-top: 5px;
+  line-height: 4rem;
+  font-size: $font_l;
+  font-weight: 500;
+}
+
+.index__presentation-txt2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.index__middle__text {
+  margin-left: 20px;
+  font-size: $font_s;
+  line-height: 2rem;
+}
+
+
+.index__middle__carroussel {
+  min-width: 30vw;
+  min-height: 20vw;
+}
+
+.index__middle__p {
+  font-size: $font_l;
+  font-family: 'Red Hat Display';
+}
+
+.font_s {
+  font-size: $font_s;
+}
