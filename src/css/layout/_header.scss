@@ -32,7 +32,7 @@
 
 @media (max-width : $width_s) {
     .header__title {
-    font-size: $font_s;
+        font-size: $font_s;
     }
 
 }
@@ -41,13 +41,13 @@
         font-size: $font_xs;
     }
     .header__title {
-    font-size: $font_l;
+        font-size: $font_l;
     }
 }
 
 @media (max-width : $width_l) {
     .header__title {
-    font-size: $font_xl;
+        font-size: $font_xl;
     }
 
 }
