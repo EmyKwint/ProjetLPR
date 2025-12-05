@@ -31,8 +31,8 @@
 }
 
 @media (max-width : $width_s) {
-    .header__title{
-        font-size: $font_m;
+    .header__title {
+    font-size: $font_s;
     }
 
 }
@@ -40,12 +40,14 @@
     .text{
         font-size: $font_xs;
     }
-
+    .header__title {
+    font-size: $font_l;
+    }
 }
 
 @media (max-width : $width_l) {
-    .header__title{
-    font-size: $font_l;
+    .header__title {
+    font-size: $font_xl;
     }
 
 }

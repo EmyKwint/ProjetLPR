@@ -42,14 +42,20 @@
 }
 
 @media (max-width : $width_s) {
-    
+
 }
-@media (max-width : $width_m) {
+@media (max-width : $width_l) {
     .menu__btn-txt {
         display: none;
     }
+
+    .menu__item {
+        font-size: $font_m;
+    }
 }
 
-@media (max-width : $width_l) {
-
+@media (min-width : $width_l) {
+        .menu__btn-txt {
+        font-size: $font_m;
+    }
 }
