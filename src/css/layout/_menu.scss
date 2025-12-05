@@ -15,6 +15,7 @@
 
 .menu-btn__bar {
     display: none;
+    content: "";
 }
 
 .menu__item {
@@ -64,7 +65,8 @@
         display: none;
     }
     .menu-btn__bar {
-    display:contents;
+        display:inline;
+        margin-right: 20px;
     }
     .menu__center {
     display: none;

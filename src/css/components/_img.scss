@@ -18,12 +18,20 @@ img {
     flex-direction: column;
 }
 
+.hero__title__img-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.hero__title__img-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
 .img__1 {
     z-index: 1;
-    position: relative;
-    left: 50%;
-
-
 }
 
 .img__2 {
