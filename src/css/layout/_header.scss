@@ -26,15 +26,31 @@
     font-size: $font_xxl;
 }
 
+.header__title-mobile {
+    display: none;
+}
+
 .menu__center {
     justify-content: space-between;
 }
 
-@media (max-width : $width_s) {
+/* MEDIA QUERIES*/
+
+@media (max-width : $width_l) {
     .header__title {
-        font-size: $font_s;
+        font-size: $font_xl;
     }
 
+}
+
+@media (max-width : $width_xm) {
+    .header__menu {
+        justify-content: space-between;
+    }
+    .header__title-mobile {
+    display:inline;
+    margin-left: 20px;
+}
 }
 @media (max-width : $width_m) {
     .text{
@@ -45,9 +61,10 @@
     }
 }
 
-@media (max-width : $width_l) {
+@media (max-width : $width_s) {
     .header__title {
-        font-size: $font_xl;
+        font-size: $font_m;
     }
 
 }
+
