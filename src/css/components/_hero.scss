@@ -53,3 +53,16 @@
 .hero__title__div {
     position: relative;
 }
+
+@media (max-width : $width_l) {
+    .hero__title{
+        font-size: $font_uxxl;
+    }
+}
+
+@media (max-width : $width_m) {
+    .hero__title{
+        font-size: $font_xxl;
+    }
+}
+
