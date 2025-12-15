@@ -8,12 +8,12 @@
 
 .text {
   font-size: $font_l;
-  font-family: "red hat display";
+  font-family: $red_hat;
 }
 
 .text-m {
   font-size: $font_s;
-  font-family: "red hat display";
+  font-family: $red_hat;
 }
 
 .text-red {
@@ -63,7 +63,7 @@
 
 .index__middle__p {
   font-size: $font_l;
-  font-family: 'Red Hat Display';
+  font-family: $red_hat;
 }
 
 .font_s {
