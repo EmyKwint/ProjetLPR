@@ -50,7 +50,7 @@
 
 .produit__title {
     font-size: $font_product;
-    font-family: "Cookie";
+    font-family: $title_font;
     border-bottom: 1px solid $black;
     width:fit-content;
 }
@@ -71,7 +71,7 @@
 }
 
 .carte__price {
-    font-family: 'Cookie';
+    font-family: $title_font;
     font-size: $font_product;
     color: $primary;
 }
