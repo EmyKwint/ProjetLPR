@@ -5,41 +5,6 @@ img {
 }
 
 
-.hero__img {
-    width: 850px;
-    height: auto    ;
-    border-radius: 25px;
-    box-shadow: $shadow;
-}
-
-.hero__title__img {
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-}
-
-.hero__title__img-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.hero__title__img-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.img__1 {
-    z-index: 1;
-}
-
-.img__2 {
-    z-index: 0;
-    position: absolute;
-    top: 200px;
-}
-
 .index__img {
     width: 40vw;
     height: auto;

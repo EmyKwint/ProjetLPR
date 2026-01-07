@@ -1,69 +1,18 @@
 @use '../utils/variables' as *;
 
 .hero {
-    position: relative;
-    margin-bottom: 220px;
-    margin-top: 20px;
-}
-.hero__title {
-    z-index: 2;
-    padding: 2rem;
-    //font-size: 12.8rem;
-    font-size: 14.4rem;
-    color: $secondary;
-    position: absolute;
-    text-shadow:
-    2.5px 2.5px 0 $background,
-    -2.5px 2.5px 0 $background,
-    -2.5px -2.5px 0 $background,
-    2.5px -2.5px 0 $background;
+    margin-top: 25px;
+    padding: 0;
 }
 
-.menu__title {
-    z-index: 2;
-    padding: 2rem;
-    font-family: $title_font;
-    text-align: center;
-    font-size: 14.4rem;
-    color: $secondary;
-    text-shadow:
-    2.5px 2.5px 0 $background,
-    -2.5px 2.5px 0 $background,
-    -2.5px -2.5px 0 $background,
-    2.5px -2.5px 0 $background;
+.hero__cover {
+    display: flex;
+    justify-content: center;
 }
 
-
-
-.hero__1 {
-    left: 0vw;
-    position: absolute;
+.hero__img {
+    width:80%;
+    height: auto    ;
+    border-radius: 25px;
+    box-shadow: $shadow;
 }
-.hero__2 {
-    left : 30vw;
-    top: 200px;
-    position: absolute;
-}
-.hero__3 {
-    right: 0vw;
-    top: 400px;
-    position: absolute;
-}
-
-.hero__title__div {
-    position: relative;
-    margin:       auto;
-}
-
-@media (max-width : $width_l) {
-    .hero__title{
-        font-size: $font_uxxl;
-    }
-}
-
-@media (max-width : $width_m) {
-    .hero__title{
-        font-size: $font_xxl;
-    }
-}
-
