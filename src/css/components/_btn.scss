@@ -8,42 +8,48 @@
 }
 
 .btn-cta {
-    border: solid 2px  $primary;
-    border-radius: 10px;
-    background-color: $background;
-    padding: 1rem;
-    box-shadow: $shadow;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    position: absolute;
+    top: 80%;
+    border: solid 2px  $primary;
+    border-radius: 25px;
+    background-color: $background;
+    padding: 2rem;
+    box-shadow: $shadow;
+    z-index: 2;
 }
 
 .btn-cta:hover {
     box-shadow: $inner_shadow;
 }
 
-.carroussel__arrow-left {
-    font-size: $font_xl;
+.hero__arrow-left {
+    z-index: 1;
+    font-size: $font_xxl;
     color: $background;
     position: absolute;
-    top: 175px;
-    left: 5px;  
+    top: 55%;
+    left: 12%;  
         &:hover {
         text-shadow:
         1px .5px 1px $background_blur;
         }
 }
 
-.carroussel__arrow-right {
-    font-size: $font_xl;
+.hero__arrow-right {
+    z-index: 1;
+    font-size: $font_xxl;
     color: $background;
     position: absolute;
-    top: 175px;
-    right: 5px;
+    top: 55%;
+    right: 12%;
         &:hover {
         text-shadow:
         1px .5px 1px $background_blur;
         }
 }
-
 .fill {
     position: absolute;
     font-size: $font_xl;

@@ -1,7 +1,7 @@
 @use '../utils/variables' as *;
 
 .hero {
-    margin-top: 25px;
+    margin-top: 35px;
     padding: 0;
 }
 
@@ -11,8 +11,10 @@
 }
 
 .hero__img {
+    position: relative;
     width:80%;
     height: auto    ;
     border-radius: 25px;
     box-shadow: $shadow;
+    z-index: 0;
 }
