@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js'></script>
+    <script src="src/js/carroussel.js" defer></script>
 
 
 
@@ -71,12 +72,13 @@
 
     <section class="hero">   
             <div class="hero__cover">
-                    <img class="img hero__img"
+                    <img id="image"
+                        class="img hero__img"
                         src="assets/img/hero_img_1.webp"
                         alt="img salade vinegrette"
                         loading="lazy" >
-                    <i class="bi bi-arrow-left-circle-fill  hero__arrow-left"></i>
-                    <i class="bi bi-arrow-right-circle-fill hero__arrow-right"></i>
+                    <i class="bi bi-arrow-left-circle-fill  hero__arrow-left"  onclick="slide(-1)" ></i>
+                    <i class="bi bi-arrow-right-circle-fill hero__arrow-right" onclick="slide(1)"  ></i>
                     <div class="btn btn-cta">
                         <a class="text" href="carte.html">Regardez notre menu</a>
                     </div>
