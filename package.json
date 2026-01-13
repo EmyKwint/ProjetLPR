@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "format": "^0.2.2",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "run": "^1.5.0"
+  },
+  "name": "projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmyKwint/ProjetLPR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EmyKwint/ProjetLPR/issues"
+  },
+  "homepage": "https://github.com/EmyKwint/ProjetLPR#readme"
+}
