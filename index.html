@@ -16,6 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
+    <script src="src/js/carroussel.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
 
@@ -155,7 +156,7 @@
         <img
           id="image"
           class="relative z-0 h-auto w-[95%] rounded-3xl shadow-[2px_5px_5px_rgba(0,0,0,0.5)] md:w-4/5"
-          src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200"
+          src="assets/img/hero_img_1.webp"
           alt="img salade vinaigrette"
           loading="lazy"
         />
@@ -214,7 +215,7 @@
             </div>
             <img
               class="order-1 h-auto w-full rounded-3xl shadow-[2px_5px_5px_rgba(0,0,0,0.5)] md:order-2 md:w-[40vw]"
-              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+              src="assets/img/index_img_1.webp"
               alt="L'équipe de restauration"
               loading="lazy"
             />
@@ -226,7 +227,7 @@
           >
             <img
               class="h-auto w-full rounded-3xl shadow-[2px_5px_5px_rgba(0,0,0,0.5)] md:w-[40vw]"
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+              src="assets/img/index_img_2.webp"
               alt="Ambiance du restaurant"
               loading="lazy"
             />
@@ -270,7 +271,7 @@
         >
           <img
             class="h-auto w-full rounded-3xl object-cover shadow-[2px_5px_5px_rgba(0,0,0,0.5)]"
-            src="https://images.unsplash.com/photo-1562158147-f1da0e4e4962?w=800"
+            src="assets/img/carroussel/plat1_1.webp"
             alt="image d'un plat"
           />
         </div>
@@ -444,30 +445,6 @@
     </footer>
 
     <script>
-      // Carousel functionality
-      let imgStock = [
-        {
-          titre: "Salade Vinaigrette",
-          affiche:
-            "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200",
-        },
-        {
-          titre: "Brochette",
-          affiche:
-            "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=1200",
-        },
-      ];
-
-      let position = 0;
-      const img = document.querySelector("#image");
-
-      function slide(sens) {
-        position += sens;
-        if (position > imgStock.length - 1) position = 0;
-        if (position < 0) position = imgStock.length - 1;
-        img.src = imgStock[position].affiche;
-        img.alt = imgStock[position].titre;
-      }
 
       // Calendar initialization
       document.addEventListener("DOMContentLoaded", function () {
