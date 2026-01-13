@@ -3,256 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>La Place Rouge</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allison&family=Bilbo+Swash+Caps&family=Cookie&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oregano:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
-
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js'></script>
-    <script src="src/js/carroussel.js" defer></script>
-
-
-
-    <title>La Place Rouge</title>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cream': '#fdf5e4',
+                        'red-custom': '#d11515',
+                        'blue-custom': '#669bbc',
+                        'dark': '#1a0000',
+                    },
+                    fontFamily: {
+                        'oregano': ['Oregano', 'cursive'],
+                        'redhat': ['Red Hat Display', 'sans-serif'],
+                        'cookie': ['Cookie', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { font-size: 66.5%; }
+        body { margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; border: 0; box-sizing: border-box; }
+    </style>
 </head>
 
-
-<body>
-    <header class="header section">
-        <nav class=" header__menu menu ">
-            <a class="title header__title header__title-mobile" href="index.html">La Place Rouge</a>
-            <ul class="menu__list list__sm">
-                <li class="menu__item">
-                    <a class="menu-btn" href="https://www.facebook.com/laplacerouge70/?locale=fr_FR">
+<body class="bg-cream leading-normal">
+    <!-- Header -->
+    <header class="py-5 w-full bg-cream/50 backdrop-blur-[10px] sticky top-0 z-10 shadow-[0_5px_10px_rgba(0,0,0,0.3)]">
+        <nav class="w-auto flex flex-row justify-between lg:justify-evenly items-center px-5 lg:px-0">
+            <!-- Logo Mobile -->
+            <a class="font-oregano text-red-custom text-[2rem] md:text-[3.6rem] lg:hidden" href="#index.html">La Place Rouge</a>
+            
+            <!-- Social Links Left -->
+            <ul class="hidden lg:flex flex-row gap-4">
+                <li>
+                    <a class="text-red-custom text-[2.5rem] hover:drop-shadow-[1px_0.5px_1px_rgba(209,21,21,0.5)]" href="https://www.facebook.com/laplacerouge70/?locale=fr_FR">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu-btn" href="https://www.instagram.com/laplacerouge70/?hl=fr">
+                <li>
+                    <a class="text-red-custom text-[2.5rem] hover:drop-shadow-[1px_0.5px_1px_rgba(209,21,21,0.5)]" href="https://www.instagram.com/laplacerouge70/?hl=fr">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </li>
             </ul>
-            <ul class="menu__list menu__center">
-                <li class="menu__item menu__text">
-                    <a class="menu__btn-txt" href="contact.html">Contact</a>
+            
+            <!-- Center Menu -->
+            <ul class="hidden lg:flex flex-row justify-between items-center gap-12 xl:gap-20">
+                <li>
+                    <a class="text-[1.4rem] md:text-[1.6rem] lg:text-[2.4rem] font-redhat border-b border-blue-custom text-red-custom hover:drop-shadow-[1px_0.5px_1px_rgba(209,21,21,0.5)]" href="#contact.html">Contact</a>
                 </li>
-                <li class="menu__item menu__text">
-                    <a class="menu__btn-txt" href="reservation.html">Réservation</a>
+                <li>
+                    <a class="text-[1.4rem] md:text-[1.6rem] lg:text-[2.4rem] font-redhat border-b border-blue-custom text-red-custom hover:drop-shadow-[1px_0.5px_1px_rgba(209,21,21,0.5)]" href="#reservation.html">Réservation</a>
                 </li>
-                <li class="menu__item" >
-                    <a class="title header__title" href="index.html">
+                <li>
+                    <a class="font-oregano text-red-custom text-[3.6rem] xl:text-[6.4rem]" href="#index.html">
                         <h1>La Place Rouge</h1> 
                     </a>
                 </li>
-                <li class="menu_item menu__text">
-                    <a class="menu__btn-txt" href="carte.html">Notre Carte</a>
+                <li>
+                    <a class="text-[1.4rem] md:text-[1.6rem] lg:text-[2.4rem] font-redhat border-b border-blue-custom text-red-custom hover:drop-shadow-[1px_0.5px_1px_rgba(209,21,21,0.5)]" href="#carte.html">Notre Carte</a>
                 </li>
-                <li class="menu_item menu__text">
-                    <a class="menu__btn-txt" href="galerie.html">Galerie</a>
+                <li>
+                    <a class="text-[1.4rem] md:text-[1.6rem] lg:text-[2.4rem] font-redhat border-b border-blue-custom text-red-custom hover:drop-shadow-[1px_0.5px_1px_rgba(209,21,21,0.5)]" href="#galerie.html">Galerie</a>
                 </li>
             </ul>
-            <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu-btn">
+            
+            <!-- Right Icons -->
+            <ul class="flex flex-row gap-5">
+                <li class="hidden lg:block">
+                    <a class="text-red-custom text-[2.5rem]">
                         <i class="bi bi-person-square"></i>
                     </a>
                 </li>
-                <li class="menu__item menu-btn__bar">
-                    <button class="menu-btn">
-                        <span class=""></span>
+                <li class="lg:hidden">
+                    <button class="text-red-custom text-[2.5rem]">
+                        <i class="bi bi-list"></i>
                     </button>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">   
-            <div class="hero__cover">
-                    <img id="image"
-                        class="img hero__img"
-                        src="assets/img/hero_img_1.webp"
-                        alt="img salade vinegrette"
-                        loading="lazy" >
-                    <i class="bi bi-arrow-left-circle-fill  hero__arrow-left"  onclick="slide(-1)" ></i>
-                    <i class="bi bi-arrow-right-circle-fill hero__arrow-right" onclick="slide(1)"  ></i>
-                    <div class="btn btn-cta">
-                        <a class="text" href="carte.html">Regardez notre menu</a>
-                    </div>
+    <!-- Hero Section -->
+    <section class="mt-9 p-0 bg-cream/50">   
+        <div class="flex justify-center relative">
+            <img id="image"
+                class="relative w-[95%] md:w-4/5 h-auto rounded-3xl shadow-[2px_5px_5px_rgba(0,0,0,0.5)] z-0"
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200"
+                alt="img salade vinaigrette"
+                loading="lazy">
+            
+            <i class="bi bi-arrow-left-circle-fill z-[1] text-[4rem] md:text-[6.4rem] text-cream absolute top-[45%] md:top-[50%] left-[2%] md:left-[12%] cursor-pointer hover:drop-shadow-[1px_0.5px_1px_rgba(253,245,228,0.5)]" onclick="slide(-1)"></i>
+            
+            <i class="bi bi-arrow-right-circle-fill z-[1] text-[4rem] md:text-[6.4rem] text-cream absolute top-[45%] md:top-[50%] right-[2%] md:right-[12%] cursor-pointer hover:drop-shadow-[1px_0.5px_1px_rgba(253,245,228,0.5)]" onclick="slide(1)"></i>
+            
+            <div class="flex flex-row justify-center absolute top-[75%] md:top-[80%] border-2 border-red-custom rounded-3xl bg-cream px-6 py-4 md:p-8 shadow-[2px_5px_5px_rgba(0,0,0,0.5)] z-[2] hover:shadow-[inset_5px_10px_15px_rgba(0,0,0,0.3)] transition-shadow">
+                <a class="text-[1.6rem] md:text-[2.4rem] font-redhat text-red-custom" href="#carte.html">Regardez notre menu</a>
             </div>
-
+        </div>
     </section>
 
+    <!-- Presentation Section -->
+    <section class="py-16 bg-blue-custom/10">
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto">
+            <h3 class="font-oregano text-center text-red-custom text-[4rem] md:text-[6.4rem] mb-12 md:mb-20 mt-12 md:mt-20">
+                L'ambiance et le goût !
+            </h3>
 
-    <section class="container section section__index">
-
-        <h3 class="title index__title">
-            L'ambiance et le goût !
-        </h3>
-
-        <div class="index__presentation">
-            <div class="index__présentation-row">
-                <div class="index__presentation-txt index__text__1">
-                    <span class="text text-black index__text__1">Venez découvrir notre cuisine</span>
-                    <span class="text text-blue index__text__1">Eurasiatique</span>
-                    <span class="text text-black index__text__1">, inspiré de plats traditionnels</span>
-                    <span class="text text-blue index__text__1">Russes, Géorgiens, Tatares et Sibériens.<br /></span>
-                    <span class="text text-black index__text__1">Au travers d'une cuisine</span>
-                    <span class="text text-red index__text__1">faite maison</span>
-                    <span class="text text-black index__text__1">par notre chef Andrey Nefedev, accompagné de sa femme Liudmila et leur fille Angelina</span>
+            <div class="flex flex-col gap-12 md:gap-20">
+                <!-- Row 1 -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-5">
+                    <div class="self-center leading-[3rem] md:leading-[4rem] text-[1.6rem] md:text-[2.4rem] font-medium text-right order-2 md:order-1 font-redhat">
+                        <span class="text-black">Venez découvrir notre cuisine </span>
+                        <span class="text-blue-custom">Eurasiatique</span>
+                        <span class="text-black">, inspiré de plats traditionnels </span>
+                        <span class="text-blue-custom">Russes, Géorgiens, Tatares et Sibériens.<br /></span>
+                        <span class="text-black">Au travers d'une cuisine </span>
+                        <span class="text-red-custom">faite maison </span>
+                        <span class="text-black">par notre chef Andrey Nefedev, accompagné de sa femme Liudmila et leur fille Angelina</span>
+                    </div>
+                    <img class="w-full md:w-[40vw] h-auto rounded-3xl shadow-[2px_5px_5px_rgba(0,0,0,0.5)] order-1 md:order-2"
+                        src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+                        alt="L'équipe de restauration"
+                        loading="lazy" />
                 </div>
-                <img class="img index__img"
-                    src="assets/img/index_img_1.webp"
-                    alt="L'équipe de restauration, dans l'ordre : La fille, le père et la mère"
-                    loading="lazy" />
-            </div>
 
-            <div class="index__présentation-row">
-                <img class="img index__img"
-                    src="assets/img/index_img_2.webp"
-                    alt="L'équipe de restauration, dans l'ordre : La fille, le père et la mère"
-                    loading="lazy" />
-                <div class="index__presentation-txt index__text__2">
-                    <span class="text text-black index__text__2">Dans un cadre chaleureux,</span>
-                    <span class="text text-red index__text__2">venez vous sentir comme à la datcha</span>
-                    <span class="text text-black index__text__2">, goûtez les saveurs du</span>
-                    <span class="text text-blue index__text__2">Caucase</span>
-                    <span class="text text-black index__text__2">et voyagez lors d'une promenade culinaire qui vous fera visiter une partie du monde.<br />
-                    Laissez vous porter par une gastronomie dépaysante et des boissons traditionnelles.<br /></span>
-                    <span class="text text-red index__text__2">N'oubliez pas de réserver votre billet !</span>
+                <!-- Row 2 -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-5">
+                    <img class="w-full md:w-[40vw] h-auto rounded-3xl shadow-[2px_5px_5px_rgba(0,0,0,0.5)]"
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
+                        alt="Ambiance du restaurant"
+                        loading="lazy" />
+                    <div class="self-center leading-[3rem] md:leading-[4rem] text-[1.6rem] md:text-[2.4rem] font-medium text-left font-redhat">
+                        <span class="text-black">Dans un cadre chaleureux, </span>
+                        <span class="text-red-custom">venez vous sentir comme à la datcha</span>
+                        <span class="text-black">, goûtez les saveurs du </span>
+                        <span class="text-blue-custom">Caucase</span>
+                        <span class="text-black"> et voyagez lors d'une promenade culinaire qui vous fera visiter une partie du monde.<br />
+                        Laissez vous porter par une gastronomie dépaysante et des boissons traditionnelles.<br /></span>
+                        <span class="text-red-custom">N'oubliez pas de réserver votre billet !</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <h3 class="title index__title">
+    <!-- Authentic Cuisine Section -->
+    <section class="py-16 bg-cream/50">
+        <h3 class="font-oregano text-center text-red-custom text-[4rem] md:text-[6.4rem] mb-12 md:mb-20">
             Une cuisine authentique !
         </h3>
 
-        <div class="container section index__middle__div">
-            <div class="index__middle__carroussel">
-                <img
-                    class="img__carroussel"
-                    src="assets/img/carroussel/plat1_1.webp"
-                    alt="image d un plat"  />
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto p-6 md:p-[15px_10px] rounded-3xl border-[0.2rem] border-blue-custom bg-white flex flex-col md:flex-row gap-8 md:gap-0 shadow-[2px_5px_5px_rgba(0,0,0,0.5)]">
+            <div class="flex flex-row relative min-w-full md:min-w-[30vw] md:min-h-[20vw]">
+                <img class="shadow-[2px_5px_5px_rgba(0,0,0,0.5)] rounded-3xl w-full h-auto object-cover"
+                    src="https://images.unsplash.com/photo-1562158147-f1da0e4e4962?w=800"
+                    alt="image d'un plat" />
+            </div>
+            <div class="flex flex-col justify-center w-full md:w-[50vw] md:ml-8">
+                <p class="text-[1.4rem] md:text-[1.6rem] leading-8 font-redhat">
+                    Dans notre restaurant russe, chaque plat que nous vous servons est le résultat d'un savoir-faire authentique et d'une tradition culinaire transmise de génération en génération. Ici, tout est fait maison, chaque jour, avec patience et passion. Nous préparons nos recettes comme le veut la véritable gastronomie russe : à partir de produits frais, soigneusement choisis, et travaillés dans le respect des saveurs d'origine.<br><br>
 
-           </div>
-            <div class="index__middle__carroussel-description">
-                <div class="index__middle__p">
-                    <p class="index__middle__text">
-                        Dans notre restaurant russe, chaque plat que nous vous servons est le résultat d’un savoir-faire authentique et d’une tradition culinaire transmise de génération en génération. Ici, tout est fait maison, chaque jour, avec patience et passion. Nous préparons nos recettes comme le veut la véritable gastronomie russe : à partir de produits frais, soigneusement choisis, et travaillés dans le respect des saveurs d’origine.<br><br>
-
-                        Que vous veniez découvrir les spécialités russes pour la première fois ou retrouver des saveurs qui vous sont familières, nous mettons un point d’honneur à vous offrir une expérience authentique. Chez nous, vous pouvez savourer en toute confiance : tout est fait maison, chaque jour, avec passion et respect de la cuisine russe.
-                    </p>
-                </div>
-
+                    Que vous veniez découvrir les spécialités russes pour la première fois ou retrouver des saveurs qui vous sont familières, nous mettons un point d'honneur à vous offrir une expérience authentique. Chez nous, vous pouvez savourer en toute confiance : tout est fait maison, chaque jour, avec passion et respect de la cuisine russe.
+                </p>
             </div>
         </div>
+    </section>
 
-
-        <h3 class="title index__title">
+    <!-- Reservation Section -->
+    <section class="py-16 bg-cream/50">
+        <h3 class="font-oregano text-center text-red-custom text-[4rem] md:text-[6.4rem] mb-12 md:mb-20">
             Réservez dès maintenant !
         </h3>
 
-        <div class="index__reservation">
-            <div class="index__presentation-txt2">
-                <span class="text text-red index__text__3">Connectez vous à vôtre compte</span>
-                <span class="text text-black index__text__3">et réservez maintenant pour bénéficier de</span>
-                <span class="text text-red index__text__3">points de fidélité ! <br /></span>
-                <span class="text text-black index__text__3">Vous souhaitez voyager depuis chez vous ?</span>
-                <span class="text text-red index__text__3">Connectez vous, commandez depuis le menu et venez chercher votre repas ! <br /></span>
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto flex flex-col gap-8">
+            <div class="text-center leading-[3rem] md:leading-[4rem] text-[1.6rem] md:text-[2.4rem] font-medium mb-4 font-redhat">
+                <span class="text-red-custom">Connectez vous à votre compte </span>
+                <span class="text-black">et réservez maintenant pour bénéficier de </span>
+                <span class="text-red-custom">points de fidélité ! <br /></span>
+                <span class="text-black">Vous souhaitez voyager depuis chez vous ? </span>
+                <span class="text-red-custom">Connectez vous, commandez depuis le menu et venez chercher votre repas ! <br /></span>
             </div>
-            <div class="calendar" id='calendar' style=" margin: auto;"></div>
-
+            <div id='calendar' class="w-full md:w-3/4 mx-auto font-redhat text-[1.4rem] md:text-[2rem]"></div>
         </div>
+    </section>
 
-        <h3 class="title index__title title-left">
+    <!-- Maps Section -->
+    <section class="py-16 bg-cream/50">
+        <h3 class="font-oregano text-left md:text-center text-red-custom text-[4rem] md:text-[6.4rem] mb-12 md:mb-20 px-8 md:px-0">
             Nous trouver :
         </h3>
 
-        <div class="index__maps">
-            <iframe class="maps__integration"
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto relative">
+            <iframe class="w-full h-[30rem] md:h-[42rem] rounded-3xl border-2 border-blue-custom shadow-[2px_5px_5px_rgba(0,0,0,0.5)] relative z-[1]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.233387929231!2d6.498762077095785!3d47.67988727119671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47925b2c4b38882f%3A0xe963a76c9a7a5860!2sLa%20Place%20Rouge!5e0!3m2!1sfr!2sfr!4v1763370184635!5m2!1sfr!2sfr"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="index__maps__info">
-                <span class="index__maps__text">06.37.58.78.50<br /></span>
-                <span class="index__maps__text">51 rue Carnot<br /></span>
-                <span class="index__maps__text">70200 Lure</span>
+            <div class="hidden md:block text-[1.6rem] md:text-[2rem] font-redhat absolute z-[2] bottom-[20rem] md:bottom-[25.3rem] right-4 md:right-[90px] border-2 border-blue-custom bg-cream/50 backdrop-blur-[15px] rounded-3xl p-4 md:p-[15px] text-center shadow-[2px_5px_5px_rgba(0,0,0,0.5)]">
+                <span>06.37.58.78.50<br /></span>
+                <span>51 rue Carnot<br /></span>
+                <span>70200 Lure</span>
             </div>
         </div>
-
-        <h3 class="title index__title title-left">
-            Quelques Avis :
-        </h3>
-
-
     </section>
 
-
-    <footer class="section footer">
-        <div class="title-footer">
-            <h2 class="title index__title">
+    <!-- Footer -->
+    <footer class="bg-blue-custom p-[10px]">
+        <div class="flex justify-center mx-auto max-w-[500px] border-b-2 border-cream pb-4">
+            <h2 class="font-oregano text-center text-red-custom text-[4rem] md:text-[6.4rem]">
                 La Place Rouge
             </h2>
         </div>
-        <div class="container footer__div">
-            <div class="footer__div-where">
-                <span class="footer__text">51 Rue Carnot</span><br />
-                <span class="footer__text">70200</span><br />
-                <span class="footer__text">Lure</span><br />
+        
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto flex flex-col md:flex-row justify-center gap-8 md:gap-5 text-center pt-[15px]">
+            <div>
+                <span class="text-cream font-redhat text-[1.6rem] md:text-[2.4rem]">51 Rue Carnot</span><br />
+                <span class="text-cream font-redhat text-[1.6rem] md:text-[2.4rem]">70200</span><br />
+                <span class="text-cream font-redhat text-[1.6rem] md:text-[2.4rem]">Lure</span><br />
             </div>
-            <div class="footer__div-where">
-                <span class="footer__text">Ouvert du Mardi au Samedi</span><br />
-                <span class="footer__text">12h - 14h</span><br />
-                <span class="footer__text">19h - 22h</span><br />
+            <div>
+                <span class="text-cream font-redhat text-[1.6rem] md:text-[2.4rem]">Ouvert du Mardi au Samedi</span><br />
+                <span class="text-cream font-redhat text-[1.6rem] md:text-[2.4rem]">12h - 14h</span><br />
+                <span class="text-cream font-redhat text-[1.6rem] md:text-[2.4rem]">19h - 22h</span><br />
             </div>
         </div>
-        <div class="container footer__div-sm">
-            <span class="footer__text footer__text-red">Retrouvez nous sur nos réseaux sociaux :</span><br />
-            <ul class="menu__list list__sm">
-                <li class="menu__item-white">
-                    <a class="menu-btn" href="https://www.facebook.com/laplacerouge70/?locale=fr_FR">
+        
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto flex flex-col justify-center text-center gap-[10px] py-[10px] border-b-2 border-cream">
+            <span class="mt-5 text-red-custom font-redhat text-[1.6rem] md:text-[2.4rem]">Retrouvez nous sur nos réseaux sociaux :</span>
+            <ul class="flex flex-row justify-center gap-4">
+                <li>
+                    <a class="text-cream text-[2.5rem] hover:drop-shadow-[1px_0.5px_1px_rgba(253,245,228,0.5)]" href="https://www.facebook.com/laplacerouge70/?locale=fr_FR">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
-                <li class="menu__item-white">
-                    <a class="menu-btn" href="https://www.instagram.com/laplacerouge70/?hl=fr">
+                <li>
+                    <a class="text-cream text-[2.5rem] hover:drop-shadow-[1px_0.5px_1px_rgba(253,245,228,0.5)]" href="https://www.instagram.com/laplacerouge70/?hl=fr">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="container footer__link">
-            <span class="text-white dev__thx">2025. Créé avec Passion par Louise R.</span>
-            <div class="footer__item-white footer__link-link ">
-                <a href="mention.php">Mentions Légales</a>
-                <a href="mention.php">Politique confidentialité</a>
+        
+        <div class="max-w-[90vw] md:max-w-[80vw] w-[90vw] md:w-[80vw] mx-auto flex flex-col md:flex-row justify-between items-center p-[10px] gap-4">
+            <span class="text-cream text-[1.2rem] md:text-[1.6rem] font-redhat">2025. Créé avec Passion par Louise R.</span>
+            <div class="flex gap-4 text-[1.2rem] md:text-[1.6rem]">
+                <a class="text-cream font-redhat hover:drop-shadow-[1px_0.5px_1px_rgba(253,245,228,0.5)]" href="#mention.php">Mentions Légales</a>
+                <a class="text-cream font-redhat hover:drop-shadow-[1px_0.5px_1px_rgba(253,245,228,0.5)]" href="#mention.php">Politique confidentialité</a>
             </div>
         </div>
     </footer>
 
-   <script>
+    <script>
+        // Carousel functionality
+        let imgStock = [
+            { titre: "Salade Vinaigrette", affiche: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200" },
+            { titre: "Brochette", affiche: "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=1200" },
+        ];
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          selectable: true,
-          height: 555,
-          initialView: 'dayGridMonth',
-          firstDay: 1,
-          locale: 'fr',
-          events: [
-          ]
+        let position = 0;
+        const img = document.querySelector("#image");
+
+        function slide(sens) {
+            position += sens;
+            if (position > imgStock.length - 1) position = 0;
+            if (position < 0) position = imgStock.length - 1;
+            img.src = imgStock[position].affiche;
+            img.alt = imgStock[position].titre;
+        }
+
+        // Calendar initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                selectable: true,
+                height: 555,
+                initialView: 'dayGridMonth',
+                firstDay: 1,
+                locale: 'fr',
+                events: []
+            });
+            calendar.render();
         });
-        calendar.render();
-      });
-
     </script>
-
-
 </body>
 </html>
